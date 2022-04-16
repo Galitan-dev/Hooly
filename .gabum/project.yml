@@ -1,0 +1,9 @@
+name: Hooly
+description: A fullstack web exercise proposed by @Invivox
+private: false
+license:
+  id: mit
+  name: MIT License
+author: Galitan-dev
+template: blank
+path: /Users/ethan/Documents/Development.nosync/Hooly
