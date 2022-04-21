@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "compose:dev": "docker-compose --project-name hooly --env-file ./config/.dev.env --file docker/docker-compose.dev.yml",
+    "compose:dev": "docker-compose --project-name hooly --env-file ./config/.env --file docker/docker-compose.dev.yml",
     "dev": "yarn compose:dev up --detach --build"
   }
 }

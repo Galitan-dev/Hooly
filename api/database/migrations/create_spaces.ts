@@ -1,7 +1,7 @@
 import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 
 export default class Foodtrucks extends BaseSchema {
-  protected tableName = 'Spaces'
+  protected tableName = 'spaces'
 
   public async up() {
     this.schema.createTable(this.tableName, (table) => {
