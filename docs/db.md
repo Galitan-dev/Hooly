@@ -7,15 +7,15 @@
 
 ### Clé Principale
 
-- Colonne: ID
+- Colonne: id
 
 ### Colonnes
 
 | Nom      | Description               | Type               | Nullable | Commentaire |
 | -------- | ------------------------- | ------------------ | -------- | ----------- |
-| ID       | Id du Foodtruck           | int auto_increment | false    |             |
-| Name     | Nom Foodtruck             | varchar(50)        | false    |             |
-| Password | Mot de Passe du Foodtruck | varchar(50)        | false    |             |
+| id       | Id du Foodtruck           | int auto_increment | false    |             |
+| name     | Nom Foodtruck             | varchar(50)        | false    |             |
+| password | Mot de Passe du Foodtruck | varchar(50)        | false    |             |
 
 ## Table: Spaces
 
@@ -24,14 +24,14 @@
 
 ### Clé Principale
 
-- Colonne: ID
+- Colonne: id
 
 ### Colonnes
 
 | Nom  | Description         | Type               | Nullable | Commentaire                              |
 | ---- | ------------------- | ------------------ | -------- | ---------------------------------------- |
-| ID   | Id de l'emplacement | int auto_increment | false    |                                          |
-| Days | Jours d'ouverture   | int                | true     | Au format binaire: 1 = ouvert, 0x1111011 |
+| id   | Id de l'emplacement | int auto_increment | false    |                                          |
+| days | Jours d'ouverture   | int                | true     | Au format binaire: 1 = ouvert, 0x1111011 |
 
 ## Table: Bookings
 
@@ -46,7 +46,7 @@
 
 | Nom         | Description          | Type               | Nullable | Commentaire |
 | ----------- | -------------------- | ------------------ | -------- | ----------- |
-| ID          | Id de la réservation | int auto_increment | false    |             |
-| SpaceID     | Id de l'emplacement  | int                | false    |             |
-| FoodtruckID | ID du foodtruck      | int                | false    |             |
-| Date        | ID du foodtruck      | date               | false    |             |
+| id          | Id de la réservation | int auto_increment | false    |             |
+| spaceId     | Id de l'emplacement  | int                | false    |             |
+| foodtruckId | ID du foodtruck      | int                | false    |             |
+| date        | ID du foodtruck      | date               | false    |             |
