@@ -1,0 +1,13 @@
+{
+  "name": "hooly",
+  "version": "1.0.0",
+  "description": "A fullstack web exercise proposed by @Invivox",
+  "repository": "git@gitlab.com:Galitan-dev/hooly.git",
+  "author": "Galitan-dev <galitan.dev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compose:dev": "docker-compose --project-name hooly --env-file ./config/.dev.env --file docker/docker-compose.dev.yml",
+    "dev": "yarn compose:dev up --detach --build"
+  }
+}

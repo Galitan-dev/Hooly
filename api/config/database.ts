@@ -38,8 +38,8 @@ const databaseConfig: DatabaseConfig = {
       connection: {
         host: Env.get('PG_HOST'),
         port: Env.get('PG_PORT'),
-        user: Env.get('PG_USER'),
-        password: Env.get('PG_PASSWORD', ''),
+        user: 'hooly',
+        password: 'postgress',
         database: Env.get('PG_DB_NAME'),
       },
       migrations: {
