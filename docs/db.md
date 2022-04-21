@@ -11,10 +11,11 @@
 
 ### Colonnes
 
-| Nom  | Description     | Type               | Nullable | Commentaire |
-| ---- | --------------- | ------------------ | -------- | ----------- |
-| ID   | Id du Foodtruck | int auto_increment | false    |             |
-| Name | Nom Foodtruck   | varchar(50)        | false    |             |
+| Nom      | Description               | Type               | Nullable | Commentaire |
+| -------- | ------------------------- | ------------------ | -------- | ----------- |
+| ID       | Id du Foodtruck           | int auto_increment | false    |             |
+| Name     | Nom Foodtruck             | varchar(50)        | false    |             |
+| Password | Mot de Passe du Foodtruck | varchar(50)        | false    |             |
 
 ## Table: Spaces
 
