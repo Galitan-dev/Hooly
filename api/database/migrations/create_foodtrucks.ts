@@ -7,6 +7,7 @@ export default class Foodtrucks extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('ID', { primaryKey: true })
       table.string('Name', 50)
+      table.string('Password', 50)
     })
   }
 
