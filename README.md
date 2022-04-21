@@ -28,3 +28,8 @@ Un foodtruck ne peut pas réserver pour le jour même et ni pour une date passé
 ### Visuel
 
 - L'IHM WEB doit être mobile-first et responsive
+
+## Documentation
+
+- [Base de Données](./docs/db.md#base-de-données)
+- [API](./docs/api.md#api)
