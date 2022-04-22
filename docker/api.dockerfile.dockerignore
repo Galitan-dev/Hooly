@@ -9,6 +9,10 @@ tmp
 
 # Additional .gitignore ignores (any custom file you wish)
 *.code-workspace
+docs
+.gabum
+config
+docker
 
 # Additional good to have ignores for dockerignore
 Dockerfile*

@@ -9,7 +9,10 @@ USER node
 RUN mkdir tmp
 
 FROM base AS dependencies
+COPY --chown=user:user ./api/package.json ./
 RUN yarn
+COPY --chown=user:user ./api .
+ENV CACHE_DIR = /home/node/app/.cache/
 
 FROM dependencies AS build
 RUN node ace build --production
@@ -18,8 +21,8 @@ FROM base AS production
 ENV NODE_ENV=production
 ENV PORT=$PORT
 ENV HOST=0.0.0.0
-COPY --chown=node:node ./package*.json ./
+COPY --chown=user:user ./api/package.json ./
 RUN yarn --production
-COPY --chown=node:node --from=build /home/node/app/build .
+COPY --chown=user:user ./api .
 EXPOSE $PORT
 CMD [ "dumb-init", "node", "server.js" ]
