@@ -11,11 +11,12 @@
 
 ### Colonnes
 
-| Nom      | Description               | Type               | Nullable | Commentaire |
-| -------- | ------------------------- | ------------------ | -------- | ----------- |
-| id       | Id du Foodtruck           | int auto_increment | false    |             |
-| name     | Nom Foodtruck             | varchar(50)        | false    |             |
-| password | Mot de Passe du Foodtruck | varchar(50)        | false    |             |
+| Nom               | Description               | Type         | Nullable | Commentaire |
+| ----------------- | ------------------------- | ------------ | -------- | ----------- |
+| id                | Id du Foodtruck           | int(4)       | false    |             |
+| name              | Nom Foodtruck             | varchar(50)  | false    |             |
+| password          | Mot de Passe du Foodtruck | varchar(180) | false    |             |
+| remember_me_token | Jeton de mémoire          | varchar      | false    |             |
 
 ## Table: Spaces
 
@@ -28,10 +29,10 @@
 
 ### Colonnes
 
-| Nom  | Description         | Type               | Nullable | Commentaire                              |
-| ---- | ------------------- | ------------------ | -------- | ---------------------------------------- |
-| id   | Id de l'emplacement | int auto_increment | false    |                                          |
-| days | Jours d'ouverture   | int                | true     | Au format binaire: 1 = ouvert, 0x1111011 |
+| Nom  | Description         | Type   | Nullable | Commentaire                              |
+| ---- | ------------------- | ------ | -------- | ---------------------------------------- |
+| id   | Id de l'emplacement | int(4) | false    |                                          |
+| days | Jours d'ouverture   | int(8) | true     | Au format binaire: 1 = ouvert, 0x1111011 |
 
 ## Table: Bookings
 
@@ -44,9 +45,9 @@
 
 ### Colonnes
 
-| Nom         | Description          | Type               | Nullable | Commentaire |
-| ----------- | -------------------- | ------------------ | -------- | ----------- |
-| id          | Id de la réservation | int auto_increment | false    |             |
-| spaceId     | Id de l'emplacement  | int                | false    |             |
-| foodtruckId | ID du foodtruck      | int                | false    |             |
-| date        | ID du foodtruck      | date               | false    |             |
+| Nom         | Description          | Type   | Nullable | Commentaire |
+| ----------- | -------------------- | ------ | -------- | ----------- |
+| id          | Id de la réservation | int(4) | false    |             |
+| spaceId     | Id de l'emplacement  | int(4) | false    |             |
+| foodtruckId | ID du foodtruck      | int(4) | false    |             |
+| date        | ID du foodtruck      | date   | false    |             |
