@@ -19,3 +19,4 @@
 */
 
 import 'App/Modules/Foodtrucks/routes'
+import 'App/Modules/Spaces/routes'
