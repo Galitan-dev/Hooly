@@ -5,8 +5,8 @@ export default class Foodtrucks extends BaseSchema {
 
   public async up() {
     this.schema.createTable(this.tableName, (table) => {
-      table.increments('id', { primaryKey: true })
-      table.integer('days')
+      table.integer('id', 4).primary()
+      table.integer('days', 8).notNullable()
     })
   }
 
