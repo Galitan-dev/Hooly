@@ -52,13 +52,13 @@
 ### Lister les emplacements
 
 ```http
-  GET /bookings
+  GET /spaces/
 ```
 
-### Afficher une réservation
+### Afficher un  emplacement
 
 ```http
-  GET /bookings/:id
+  GET /spaces/:id
 ```
 
 ## Bookings
@@ -81,7 +81,7 @@
 ### Lister ses réservation
 
 ```http
-  GET /bookings
+  GET /bookings/
 ```
 
 *Nécessite d'être connecté*
@@ -95,7 +95,7 @@
 ### Lister les réservation d'une journée
 
 ```http
-  GET /bookings
+  GET /bookings/
 ```
 
 #### Paramètres (Search Query)
@@ -107,7 +107,7 @@
 ### Lister les réservation d'une semaine
 
 ```http
-  GET /bookings
+  GET /bookings/
 ```
 
 #### Paramètres (Search Query)
