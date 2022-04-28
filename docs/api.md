@@ -4,7 +4,7 @@
 
 ### Créer un foodtruck
 
-```http
+```ruby
   POST /foodtrucks/create
 ```
 
@@ -19,7 +19,7 @@
 
 ### Afficher le foodtruck connecté
 
-```http
+```ruby
   GET /foodtrucks/me
 ```
 
@@ -27,7 +27,7 @@
 
 ### Se connecter à un foodtruck
 
-```http
+```ruby
   POST /auth/login
 ```
 
@@ -41,7 +41,7 @@
 
 ### Se déconnecter du foodtruck
 
-```http
+```ruby
   GET /auth/logout
 ```
 
@@ -51,13 +51,13 @@
 
 ### Lister les emplacements
 
-```http
+```ruby
   GET /bookings
 ```
 
 ### Afficher une réservation
 
-```http
+```ruby
   GET /bookings/:id
 ```
 
@@ -65,7 +65,7 @@
 
 ### Créer une réservation
 
-```http
+```ruby
   POST /bookings/create
 ```
 
@@ -80,7 +80,7 @@
 
 ### Lister ses réservation
 
-```http
+```ruby
   GET /bookings
 ```
 
@@ -88,13 +88,13 @@
 
 ### Afficher une réservation
 
-```http
+```ruby
   GET /bookings/:id
 ```
 
 ### Lister les réservation d'une journée
 
-```http
+```ruby
   GET /bookings
 ```
 
@@ -106,7 +106,7 @@
 
 ### Lister les réservation d'une semaine
 
-```http
+```ruby
   GET /bookings
 ```
 
@@ -118,7 +118,7 @@
 
 ### Annuler une réservation
 
-```http
+```ruby
   GET /bookings/remove/:id
 ``` 
 
