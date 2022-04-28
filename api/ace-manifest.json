@@ -1,5 +1,17 @@
 {
   "commands": {
+    "db:fake": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/DbFake",
+      "commandName": "db:fake",
+      "description": "Reinitialize the database and fill it with fake data",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
     "dump:rcfile": {
       "settings": {},
       "commandPath": "@adonisjs/core/build/commands/DumpRc",

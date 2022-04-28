@@ -20,3 +20,4 @@
 
 import 'App/Modules/Foodtrucks/routes'
 import 'App/Modules/Spaces/routes'
+import 'App/Modules/Bookings/routes'
