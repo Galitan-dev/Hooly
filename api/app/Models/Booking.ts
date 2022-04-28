@@ -1,11 +1,4 @@
-import {
-  afterFetch,
-  afterFind,
-  BaseModel,
-  beforeFind,
-  beforeSave,
-  column,
-} from '@ioc:Adonis/Lucid/Orm'
+import { afterFetch, afterFind, BaseModel, beforeSave, column } from '@ioc:Adonis/Lucid/Orm'
 import { DateTime } from 'luxon'
 
 export default class Booking extends BaseModel {
