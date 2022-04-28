@@ -52,18 +52,13 @@
 ### Lister les emplacements
 
 ```ruby
-  GET /bookings/
+  GET /spaces/
 ```
 
 ### Afficher un  emplacement
 
-<<<<<<< HEAD
-```http
-  GET /spaces/:id
-=======
 ```ruby
-  GET /bookings/:id
->>>>>>> eb04675e24ab6b184187383eac88c82473101931
+  GET /spaces/:id
 ```
 
 ## Bookings
