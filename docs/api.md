@@ -51,13 +51,8 @@
 
 ### Lister les emplacements
 
-<<<<<<< HEAD
-```http
-  GET /spaces/
-=======
 ```ruby
-  GET /bookings
->>>>>>> eb04675e24ab6b184187383eac88c82473101931
+  GET /bookings/
 ```
 
 ### Afficher un  emplacement
