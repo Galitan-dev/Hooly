@@ -50,6 +50,7 @@ export default class Foodtrucks {
 
     response.json({
       name: foodtruck.name,
+      id: foodtruck.id,
     })
   }
 }

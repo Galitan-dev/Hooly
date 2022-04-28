@@ -120,16 +120,17 @@ export default class Bookings {
 
   public async remove({ params, auth, response }: HttpContextContract) {
     const foodtruck = auth.use('web').user!
-    const booking = await Booking.query()
+    const bookings: number[] = await Booking.query()
+      .delete()
       .where('id', params.id)
       .andWhere('foodtruckId', foodtruck.id.toString())
       .limit(1)
 
-    if (booking.length < 1) {
+    if (!bookings[0]) {
       return response.notFound({ code: 404, message: 'This booking does not exist!' })
     }
 
-    return response.json(booking[0])
+    return 'Booking sucessfully removed!'
   }
 
   public async create({ request, auth, response }: HttpContextContract) {

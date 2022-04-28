@@ -37,7 +37,6 @@ export default class Booking extends BaseModel {
   @afterFind()
   public static async parseDate(booking: Booking) {
     if (!booking.date.toFormat) {
-      console.log('hey')
       booking.date = DateTime.fromJSDate(<Date>(<unknown>booking.date))
     }
   }
